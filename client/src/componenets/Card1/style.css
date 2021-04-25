@@ -1,0 +1,135 @@
+.comp{
+    background: rgb(6, 6, 85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.carder{
+    background: whitesmoke;
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.cardl{
+    /* border: 2px solid black; */
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardlt{
+    height: 70%;
+    width: 100%;
+    /* border: 2px solid black; */
+}
+.cardlb{
+    height: 30%;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.plus{
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+    transition: 1.0s;
+}
+
+.play{
+    width: 80px;
+    height: 80px;
+    
+    opacity: 0;
+    transition: 1.0s;
+}
+.carder:hover .plus{
+    opacity: 1;
+}
+.carder:hover .play{
+    opacity: 1;
+}
+.cardr{
+    /* border: 2px solid black; */
+    width: 300px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cardimage{
+    height: auto;
+    width: 100%;
+    transition: 0.5s;
+}
+.bench{
+    color: red;
+}
+.cardrtext{
+    opacity: 0;
+    transition: all 0.5s;
+    margin-top: 15px;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.crh{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+.cardrrtxst{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:space-around;
+    /* border: 2px solid brown; */
+}
+.crl{
+    /* border: 2px solid purple; */
+    width: 100px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+.crr{
+    
+    /* border: 2px solid purple; */
+    width: 100px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.carder:hover .cardrtext {
+    opacity: 1;
+
+}
+
+.carder:hover .cardimage {
+    transform: scale(0.9)
+
+}
+.cardhead{
+   text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 15px;
+
+}

@@ -1,0 +1,20 @@
+.togglebuttondrawer{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:30px;
+    width:36px;
+    background: transparent;
+    border:none;
+    cursor:pointer;
+    padding:0;
+    box-sizing: border-box;
+}
+.togglebuttondrawer:focus{
+    outline:none;
+}
+.togglebuttondrawerline{
+    width:100%;
+    height:2px;
+    background: white;
+}

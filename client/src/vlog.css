@@ -1,0 +1,8 @@
+.bar{
+    margin-top: -30px;
+    width:100%;
+    min-height: 100vh;
+    background:url('https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') no-repeat ;
+    background-size: cover;
+
+}

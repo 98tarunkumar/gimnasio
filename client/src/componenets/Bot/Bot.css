@@ -1,0 +1,33 @@
+
+.outer{
+    position:relative;
+}
+.chatbot{
+    height: 50px;
+    width: 50px;
+}
+
+.chatbot img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    transition: 1s ease-in-out;
+}
+.clear{
+    height: 50px;
+    width: 50px;
+    top: 2px;
+    right: 2px;
+    /* opacity:0; */
+    position: absolute;
+}
+.clear img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    transition: 1s ease-in-out;
+}
+.chatbot img:hover{
+    transform: scale(110%);
+    opacity: 80%;
+}

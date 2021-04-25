@@ -1,0 +1,110 @@
+.bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  rgb(63, 63, 63);
+    height: 100vh;
+    width: 100%;
+}
+.todobody{
+    width: 500px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid white; */
+    border-radius: 20px;
+}
+.todohead{
+    height: 80px;
+    width: 90%;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    margin-left:20px;
+    margin-right:20px;
+    border-radius:10px;
+    margin-top: 40px;
+    
+}
+.todotitle{
+    display: flex;
+    justify-self: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100%;
+    height: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align:center;
+    /* border: 2px solid black; */
+    
+
+}
+.todoaddbtn{
+    display: flex;
+    justify-self: center;
+    margin-top: 22px;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+}
+.addimage{
+    height: 60px;
+    width: 60px;
+}
+.addimage:hover{
+    opacity: 60%;
+}
+.todosub{
+    height: 500px;
+    width: 90%;
+    background: whitesmoke;
+    margin-left:20px;
+    margin-right:20px;
+    border-radius:10px;
+}
+.todoaddtask{
+    height: 100px;
+    width: 100%;
+    background: none;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction:row;
+    margin-left:34px;
+    margin-right:20px;
+    border-radius:10px;
+}
+.todoformm input{
+    border: 0;
+    background: grey;
+    width:250px;
+    height: 50px;
+    padding:  0 20px;
+    margin:  20px;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-right:50px;
+}
+.todoformm input::placeholder{
+    color: whitesmoke;
+}
+.todoformm input:focus,.todoformm button:focus{
+    outline: none;
+}
+.todoformm button{
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    border: 0;
+    margin-top:-5px;
+    background: grey;
+    color: whitesmoke;
+    cursor:pointer;
+    font-weight: bolder;
+}

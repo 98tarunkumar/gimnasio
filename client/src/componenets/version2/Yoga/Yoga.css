@@ -1,0 +1,85 @@
+.yogamain{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(18, 26, 43); */
+    background: url("../images/yogabg3.jpg" )no-repeat;
+    background-size:cover; 
+}
+.yogaupper{
+    /* position: absolute; */
+    /* opacity:50%; */
+    width:100%;
+    height:100px;
+    background-color: rgb(0, 0, 0);
+    /* z-index: -1; */
+    mix-blend-mode: darken;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+   
+    width:100%;
+    z-index: 1;
+    opacity:1;
+    color:white;
+    font-family: 'Spartan', sans-serif;
+    font-size: 60px;
+    font-weight:600;
+    /* opacity:90%; */
+}
+.yogabg{
+    /* position: absolute; */
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+.titleyoga{
+    margin-left: 20%;
+    width:100%;
+    z-index: 1;
+    opacity:1;
+    color:white;
+    font-family: 'Spartan', sans-serif;
+    font-size: 60px;
+    font-weight:600;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+}
+.yogacategory{
+    width:100%;
+    height:650px;
+    /* background-color: black; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(0, 0, 0); */
+}
+.yogadesc{
+    text-align: center;
+    font-family: 'Spartan', sans-serif;
+    font-size: 30px;
+    font-weight:1000;
+}
+.yogaco{
+
+    width:100%;
+    height:290px;
+    background-color:white;
+    z-index: 1;
+}
+.yogacategoryupper{
+    width:100%;
+    z-index: 1;
+    opacity:1;
+    color:white;
+    font-family: 'Spartan', sans-serif;
+    font-size: 40px;
+    font-weight:500;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+}

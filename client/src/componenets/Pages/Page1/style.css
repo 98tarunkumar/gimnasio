@@ -1,0 +1,144 @@
+.workoutbody {
+  width: 100%;
+  height: 100vh;
+  background: #121212;
+  display: grid;
+  grid-template-rows: none;
+  grid-template-columns: 1.1fr 17fr 0.4fr;
+  grid-template-areas: "side main right";
+}
+/* color pallte #030409 */
+
+.workoutsidenav {
+  grid-area: side;
+  background: #9e9e9e;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.chesticon {
+  margin: -10px;
+  width: 100%;
+  height: 80px;
+  background: inherit;
+}
+.icon {
+  width: 100%;
+  height: 100%;
+}
+.workoutmain {
+  grid-area: main;
+  background: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.maincontent {
+  width: 1200px;
+  height: 600px;
+  background: #424242;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.mainleft {
+  height: 80%;
+  width: 40%;
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.chest_info {
+  color: #dad8d8;
+  font-size: 20px;
+  text-align: center;
+}
+.workouttext {
+  font-weight: bold;
+  font-size: 60px;
+  color: #e0e0e0;
+}
+.workoutvideo {
+  border-radius: 20px;
+  width: 90%;
+  height: 50%;
+  /* border: 2px solid black; */
+}
+
+.mainright {
+  height: 80%;
+  width: 40%;
+  border: 5px solid #e0e0e0;
+  background: #616161;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.rlist {
+  width: 90%;
+  height: 70px;
+  border-radius: 10px;
+  color: #121212;
+  background: #e0e0e0;
+  font-size: 30px;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.rrlist {
+  width: 90%;
+  height: 70px;
+  border-radius: 10px;
+  background: #121212;
+  color: #e0e0e0;
+  font-size: 30px;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.rtext {
+  text-align: left;
+  margin-left: 20px;
+}
+.rlistimg {
+  height: 50px;
+  width: 50px;
+}
+.times {
+  display: flexbox;
+  align-self: center;
+  justify-self: flex-end;
+}
+
+.youtube {
+  height: 40px;
+  width: 40px;
+}
+.workoutright {
+  grid-area: right;
+  background: none;
+  display:flex;
+
+}
+.bot{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}

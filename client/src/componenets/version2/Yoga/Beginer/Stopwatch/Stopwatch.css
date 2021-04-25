@@ -1,0 +1,71 @@
+.main-sectiongym {
+    background: transparent;
+    max-width: 600px;
+    width: 90%;
+    height: 500px;
+    margin: 30px auto;
+  }
+  
+  .clock-holdergym {
+    width: 100%;
+    background: #fff;
+    margin: 30px auto;
+    position: relative;
+  }
+  
+  
+  .stopwatchgym {
+    padding: 60px 0px;
+    text-align: center;
+  }
+  .stopwatchgym span{
+    background:#00ABA9;
+    color: #fff;
+    display: inline-block;
+    font-family: monospace;
+    font-size: 22px;
+    padding: 20px;
+    border-radius: 5px;
+    width: 70px;
+  }
+  
+  .stopwatchgym .stopwatch-btngym {
+    background: #fff;
+    margin-top: 30px;
+    margin-left: 5px;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 150px;
+    transition: background 1s;
+    cursor: pointer;
+  }
+  .stopwatchgym .stopwatch-btn-redgym{
+    border: 2px solid #C85454;
+    color: #C85454;
+  }
+  .stopwatchgym .stopwatch-btn-yelgym{
+    border: 2px solid #FFC900;
+    color: #FFC900;
+  }
+  
+  .stopwatchgym .stopwatch-btn-gregym{
+    border: 2px solid #00ABA9;
+    color: #00ABA9;
+  }
+  .stopwatchgym .stopwatch-btn-redgym:hover {
+    background: #C85454;
+    border: 2px solid #C85454;
+    color: #fff;
+  }
+  .stopwatchgym .stopwatch-btn-yelgym:hover {
+    background: #FFC900;
+    border: 2px solid #FFC900;
+    color: #fff;
+  }
+  .stopwatchgym .stopwatch-btn-gregym:hover {
+    background: #00ABA9;
+    border: 2px solid #00ABA9;
+    color: #fff;
+  }
