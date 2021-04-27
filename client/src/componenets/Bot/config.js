@@ -4,10 +4,12 @@ import './Bot.css'
 import LearningOptions from './LearningOptions/LearningOptions';
 import LinkList from './LinkList/LinkList';
 const config = {
-    botName:'Gymnasio',
+    botName:'Gimnasio',
     initialMessages: [
       createChatBotMessage("Hello User", {
         widget: "TrainingOptions",
+        widget:"YogaOptions",
+        widget:"CalOptions",
       }),
     ],
  
@@ -30,19 +32,77 @@ const config = {
           {
             text: "Core/Legs workout",
             url:
-              "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+              "page5",
             id: 2,
           },
           {
             text: "Pull Workout",
-            url: "https://frontendmasters.com",
+            url: "page2",
             id: 3,
           },
         ],
+       
       }
     },
+    {
+      widgetName: "YogaOptions",
+     widgetFunc: (props) => <LearningOptions {...props} />,
+   },
+   {
+    widgetName:"yogaOptions",
+    widgetFunc:(props)=><LinkList {...props} />,
+    props:{
+      options: [
+        {
+          text: "Begineer",
+          url:
+            "yogabeginer",
+          id: 1,
+        },
+        {
+          text: "Intermediate",
+          url:
+            "intermediateyoga",
+          id: 2,
+        },
+        {
+          text: "Advanced",
+          url: "advanceyoga",
+          id: 3,
+        },
+      ],
+    },
+  },
+    {
+      widgetName: "CalOptions",
+     widgetFunc: (props) => <LearningOptions {...props} />,
+   },
+   {
+    widgetName:"calOptions",
+    widgetFunc:(props)=><LinkList {...props} />,
+    props:{
+      options: [
+        {
+          text: "Begineer",
+          url:
+            "calbegin1",
+          id: 1,
+        },
+        {
+          text: "Intermediate",
+          url:
+            "calinter1",
+          id: 2,
+        },
+        {
+          text: "Advanced",
+          url: "advancecal1",
+          id: 3,
+        },
+      ],
+    },
+  },
  ],
-  
 
 
 

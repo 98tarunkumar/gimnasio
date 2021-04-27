@@ -1,14 +1,10 @@
 import React from "react";
 import "./Slider.css";
-import styled from "styled-components";
 import wall from "../images/wall2.jfif";
-import about from "../images/wall3.jfif";
-import services from "../images/about4.jfif";
-import contact from "../images/contact.jpeg";
-import ReactDOM from "react-dom";
-import Onecard from "./Onecard";
+import logo from "../images/logo2.PNG"
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import Bot from "../../Bot/Bot"
 const pageTransisition = {
   in: {
     opacity: 1,
@@ -32,7 +28,7 @@ const Slider = () => {
       >
         <div className="slider_nav">
           <Link to="/" className="yogalinkgym">
-            <h1>Gimnasio</h1>
+            <img src={logo} alt="imaaa"></img>
           </Link>
           <Link to="/" className="yogalinkgym">
             <span>HOME</span>
@@ -47,13 +43,16 @@ const Slider = () => {
             <span>BLOG</span>
           </Link>
         </div>
-        <img src={wall} className="slider_bg"></img>
+        <img src={wall} className="slider_bg" alt='ims' ></img>
         <div className="slider_maintext">
           <div className="slider_text">Gimnasio</div>
           <div className="slider_desc">A little effort everyday</div>
           <Link to="/service" className="yogalinkgym">
             <button className="slider_btn">Get Started</button>
           </Link>
+        </div>
+        <div className="bot">
+          <Bot/>
         </div>
       </motion.div>
       {/* <div className="slidergym">

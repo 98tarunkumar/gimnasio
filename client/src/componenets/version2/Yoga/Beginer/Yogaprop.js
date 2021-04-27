@@ -1,5 +1,4 @@
 import React from 'react'
-import Corousal from '../../corousal/Corousal'
 import {Link} from "react-router-dom"
 import tadasana from './tadasana.jpg'
 import uttanasana from './uttanasana.jpg'
@@ -7,7 +6,6 @@ import Chaturanga from './Chaturanga.jpg'
 import Adho from './Adho.jpg'
 import Balasana from './Balasana.jpg'
 
-import GifPlayer from 'react-gif-player'
 
 import './Beginmain.css'
 function Beginmain() {
@@ -20,7 +18,7 @@ function Beginmain() {
                 <div className="picture">
                 {/* <img src="https://thumbs.gfycat.com/GrouchyLastArabianhorse-max-1mb.gif" alt="this slowpoke moves"  width="100%" height="100%" />  */}
                 {/* <GifPlayer gif="https://thumbs.gfycat.com/GrouchyLastArabianhorse-max-1mb.gif" still="https://thumbs.gfycat.com/GrouchyLastArabianhorse-max-1mb.gif" />, */}
-                <img src={tadasana}loop="infinite" width="100%" height="100%"></img>
+                <img src={tadasana}loop="infinite" width="100%" height="100%"  alt="image" ></img>
                 {/* <video controls loop>
   <source src="https://thumbs.gfycat.com/GrouchyLastArabianhorse-max-1mb.gif" type="video/mp4"></source>
   <source src="https://thumbs.gfycat.com/GrouchyLastArabianhorse-max-1mb.gif" type="video/ogg"></source>
@@ -43,7 +41,7 @@ function Beginmain() {
             </div>
             
             <div className="asantwobegin">
-            <div className="picture"> <img src={uttanasana} width="100%" height="100%"></img></div>
+            <div className="picture"> <img src={uttanasana} width="100%" height="100%" alt='imd' ></img></div>
                 <div className="descripyogatwo">
                     <h1><center>UTTANASANA <br></br>Steps</center></h1>
                     <h2><br></br> 1. On your inhale, lift your arms to the sides and up, over your head.
@@ -53,7 +51,7 @@ function Beginmain() {
 <Link to="./stopwatch"><div className="btn btn-info">Stopwatch</div></Link></div>
             </div>
             <div className="asanthreebegin">
-                <div className="picture"> <img src={Chaturanga} width="100%" height="100%"></img></div>
+                <div className="picture"> <img src={Chaturanga} width="100%" height="100%" alt='imd' ></img></div>
                 <div className="descripyoga">
                     <h1><center>Plank Pose (Uttihita Chaturanga Dandasana)<br></br>Steps</center></h1>
                     <h2> <br></br>1. From Forward Fold, put your hands flat on the floor, bending your knees as much as needed to do so. Step back one leg at a time, until you’re in a high Plank Pose.
@@ -66,7 +64,7 @@ function Beginmain() {
 
             </div>
             <div className="asantwobegin">
-            <div className="picture"> <img src={Adho} width="100%" height="100%"></img></div>
+            <div className="picture"> <img src={Adho} width="100%" height="100%" alt='imd' ></img></div>
                 <div className="descripyogatwo">
                     <h1><center>Adho Mukha Svanasana <br></br>Steps</center></h1>
                     <h2><br></br> 1. From Plank Pose, push into your hands and lift your hips up and back on the inhale. One thing that can be tricky with this pose is, again, keeping your shoulders engaged but not working too hard, and keeping a neutral spine.
@@ -76,7 +74,7 @@ function Beginmain() {
         </div>
 
         <div className="asanonebegin">
-                <div className="picture"> <img src={Balasana} width="100%" height="100%"></img></div>
+                <div className="picture"> <img src={Balasana} width="100%" height="100%" alt='imd' ></img></div>
                 <div className="descripyoga">
                     <h1><center>Child’s Pose (Balasana)<br></br>Steps</center></h1>
                     <h2> <br></br>1. In Downward-Facing Dog, take a deep breath. On the exhale, release your knees to the floor, pull your hips back to your heels, and rest your forehead on the floor.

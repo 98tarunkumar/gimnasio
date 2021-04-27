@@ -25,7 +25,7 @@ function Contactus() {
     >
       <div className="slider_nav">
         <Link to="/" className="yogalinkgym">
-          <h1>Gimnasio</h1>
+          {/* <h1>Gimnasio</h1> */}
         </Link>
         <Link to="/" className="yogalinkgym">
           <span>HOME</span>
@@ -85,10 +85,18 @@ function Contactus() {
                   id="Email"
                 />
               </div>
+              <div className="form-group">
+                <input
+                  type="email"
+                  placeholder="Suggestions"
+                  className="form-control"
+                  id="Email"
+                />
+              </div>
               <button
                 className="btn  btn-info"
                 style={{ marginTop: "10px" }}
-                onClick={() => alert("Thanks for the Feedback!!")}
+                onClick={() => alert("Our Team will soon reachout to you!!..")}
               >
                 <center>Submit</center>
               </button>

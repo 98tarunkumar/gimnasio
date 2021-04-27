@@ -12,7 +12,7 @@ import './Style.css'
                 <div className="header">Login</div>
                 <div className="content">
                     <div className="image">
-                        <img src={loginImg} />
+                        <img src={loginImg} alt="ige"  />
                     </div>
                     <div className="form">
                         <div className="form-group">

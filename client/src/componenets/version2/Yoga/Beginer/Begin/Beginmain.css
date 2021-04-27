@@ -16,7 +16,18 @@
     width: 40%;
     height: 600px;
     /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: column;
+    /* border-top: 1px solid white; */
 }
+.main_left h1{
+    color: white;
+    font-size: 70px;
+    font-weight:bolder;
+}
+
 .main_right{
     width: 60%;
     height: 600px;

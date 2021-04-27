@@ -1,14 +1,19 @@
-import React, { Component ,useState} from "react";
+import React, { Component } from "react";
 import "./Todo.css";
-import Add from "./add.png";
 import Listitem from "./Listitem";
-
+import ScrollToBottom from "react-scroll-to-bottom";
+import { css } from '@emotion/css'
+const ROOT_CSS = css({
+  height: 500,
+  width: 450,
+  
+});
 
 export class Todo extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        on:false,
+      on: false,
       items: [],
       currentItem: {
         text: "",
@@ -66,38 +71,40 @@ export class Todo extends Component {
   render() {
     return (
       // <div className="bg">
-        <div className="todobody">
-          <div className="todohead">
-            <div className="todotitle">To-do List</div>
-            {/* <div className="todoaddbtn" >
+      <div className="todobody">
+        <div className="todohead">
+          <div className="todotitle">To-do List</div>
+          {/* <div className="todoaddbtn" >
               <img src={Add} className="addimage" 
             //   onclick={()=>{this.setState({on:!this.state.on})}}
               ></img>
               {console.log(this.state.on)}
             </div> */}
-          </div>
-         
-            <div className="todoaddtask">
-              <form className="todoformm" onSubmit={this.addItem}>
-                <input
-                  type="text"
-                  placeholder="Enter text"
-                  value={this.state.currentItem.text}
-                  onChange={this.handleInput}
-                ></input> 
-                <button type="submit">ADD</button>
-              </form>
-            </div>
-        
-          <div className="todosub">
+        </div>
+
+        <div className="todoaddtask">
+          <form className="todoformm" onSubmit={this.addItem}>
+            <input
+              type="text"
+              placeholder="Enter text"
+              value={this.state.currentItem.text}
+              onChange={this.handleInput}
+            ></input>
+            <button type="submit">ADD</button>
+          </form>
+        </div>
+
+        <div className="todosub">
+          <ScrollToBottom className={ROOT_CSS}>
             <Listitem
               items={this.state.items}
               deleteItem={this.deleteItem}
               setUpdate={this.setUpdate}
             />
-          </div>
+          </ScrollToBottom>
         </div>
-     // </div>
+      </div>
+      // </div>
     );
   }
 }

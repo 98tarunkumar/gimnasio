@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Navbar.css"
 import DrawerToggleButton from "../Sidedrawer/DrawerToggleButton";
-import logo3 from '../Navbar/logo2.PNG';
+// import logo3 from '../Navbar/logo2.PNG';
 // import wall from './images/wall.jfif'
 const Navbar = props => (
     <header className="navbargym">
@@ -11,7 +11,7 @@ const Navbar = props => (
                     </div>
                     <div className="navlogogym"><a href="/">
                     
-                    <img  className="loggym" src={logo3} height="100%" weight="100%" alt="Logo"/>
+                    <img  className="loggym" height="100%" weight="100%" alt="Logo"/>
               
                         </a></div>
                     <div className="spacergym"></div>

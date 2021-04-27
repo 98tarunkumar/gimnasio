@@ -7,6 +7,7 @@ import Two from "../Images/two.png";
 import Three from "../Images/three.png";
 import Four from "../Images/four.png";
 import Five from "../Images/five.png";
+import cancel from "../Images/cancel.png";
 import { motion } from "framer-motion";
 import Home from "../Images/home.png";
 import Bot from "../../../../Bot/Bot";
@@ -45,7 +46,7 @@ function Intermediateyoga4() {
             whileHover={{ scale: 0.9 }}
           >
             <Link to="./yoga">
-              <img src={Home} alt="image" width="80px" height="80px"></img>
+              <img src={Home} alt="ime" width="80px" height="80px"></img>
             </Link>
           </motion.div>
           <motion.div
@@ -54,7 +55,7 @@ function Intermediateyoga4() {
             whileHover={{ scale: 0.9 }}
           >
             <Link to="/intermediateyoga">
-              <img src={One} alt="image" width="80px" height="80px"></img>
+              <img src={One} alt="ime" width="80px" height="80px"></img>
             </Link>
           </motion.div>
           <motion.div
@@ -63,7 +64,7 @@ function Intermediateyoga4() {
             whileHover={{ scale: 0.9 }}
           >
             <Link to="/intermediateyoga1">
-              <img src={Two} alt="image" width="80px" height="80px"></img>
+              <img src={Two} alt="ime" width="80px" height="80px"></img>
             </Link>
           </motion.div>
           <motion.div
@@ -72,7 +73,7 @@ function Intermediateyoga4() {
             whileHover={{ scale: 0.9 }}
           >
             <Link to="./intermediateyoga2">
-              <img src={Three} alt="image" width="80px" height="80px"></img>
+              <img src={Three} alt="ime" width="80px" height="80px"></img>
             </Link>
           </motion.div>
           <motion.div
@@ -81,7 +82,7 @@ function Intermediateyoga4() {
             whileHover={{ scale: 0.9 }}
           >
             <Link to="./intermediateyoga3">
-              <img src={Four} alt="image" width="80px" height="80px"></img>
+              <img src={Four} alt="ime" width="80px" height="80px"></img>
             </Link>
           </motion.div>
           <motion.div
@@ -90,7 +91,16 @@ function Intermediateyoga4() {
             whileHover={{ scale: 0.9 }}
           >
             <Link to="./intermediateyoga4">
-              <img src={Five} alt="image" width="80px" height="80px"></img>
+              <img src={Five} alt="ime" width="80px" height="80px"></img>
+            </Link>
+          </motion.div>
+          <motion.div
+            className="chesticon"
+            whileTap={{ scale: 0.8 }}
+            whileHover={{ scale: 0.9 }}
+          >
+            <Link to="/">
+              <img src={cancel} alt="ime" width="80px" height="80px"></img>
             </Link>
           </motion.div>
         </div>
@@ -102,7 +112,7 @@ function Intermediateyoga4() {
                 width="100%"
                 height="100%"
                 style={{ borderRadius: "20px" }}
-                alt="image"
+                alt="ime"
               ></img>
             </div>
             <div className="main_right">

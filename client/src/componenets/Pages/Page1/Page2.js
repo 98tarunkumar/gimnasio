@@ -7,12 +7,10 @@ import Arm from "./png/workout.png";
 import Leg from "./png/leg.png";
 import home from "./png/homee.png";
 import youtube from "./png/youtube.png";
-import Push from "./png/push-up.png";
-import Wide from "./png/wide.png";
-import Incline from "./png/images.png";
 import ReactPlayer from "react-player/youtube";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import cancel from './png/log-out.png'
 import Bot from "../../Bot/Bot";
 import Stopwatch from "../../Stopwatch/Stopwatch"
 const pageTransisition = {
@@ -52,7 +50,7 @@ function Page2() {
           whileHover={{ scale: 0.9 }}
         >
           <Link to="./workout">
-            <img className="icon" src={home}></img>
+            <img className="icon"  alt="ime" src={home}></img>
           </Link>
         </motion.div>
         <motion.div
@@ -61,7 +59,7 @@ function Page2() {
           whileHover={{ scale: 0.9 }}
         >
           <Link to="/page1">
-            <img className="icon" src={Chest}></img>
+            <img className="icon"  alt='imt' src={Chest}></img>
           </Link>
         </motion.div>
         <motion.div
@@ -70,7 +68,7 @@ function Page2() {
           whileHover={{ scale: 0.9 }}
         >
           <Link to="/page2">
-            <img className="icon" src={Back}></img>
+            <img className="icon"  alt='imt' src={Back}></img>
           </Link>
         </motion.div>
         <motion.div
@@ -79,7 +77,7 @@ function Page2() {
           whileHover={{ scale: 0.9 }}
         >
           <Link to="./page3">
-            <img className="icon" src={Arm}></img>
+            <img className="icon" alt='imt'  src={Arm}></img>
           </Link>
         </motion.div>
         <motion.div
@@ -88,7 +86,7 @@ function Page2() {
           whileHover={{ scale: 0.9 }}
         >
           <Link to="./page4">
-            <img className="icon" src={Shoulder}></img>
+            <img className="icon"  alt='imt' src={Shoulder}></img>
           </Link>
         </motion.div>
         <motion.div
@@ -97,9 +95,18 @@ function Page2() {
           whileHover={{ scale: 0.9 }}
         >
           <Link to="./page5">
-            <img className="icon" src={Leg}></img>
+            <img className="icon"  alt='imt' src={Leg}></img>
           </Link>
         </motion.div>
+        <motion.div
+            className="chesticon"
+            whileTap={{ scale: 0.8 }}
+            whileHover={{ scale: 0.9 }}
+          >
+            <Link to="/">
+              <img src={cancel} alt='imt' width="80px" height="80px"></img>
+            </Link>
+          </motion.div>
       </div>
       <div className="workoutmain">
         <div className="maincontent">
@@ -180,7 +187,7 @@ function Page2() {
               {/* <img src={Push} className="rlistimg"></img> */}
               <h4 className="rtext">Bent-Over Barbell</h4>
               {/* <h2 className="times">x10</h2> */}
-              <img
+              <img alt='imt' 
                 src={youtube}
                 className="youtube"
                 onClick={() => setPush(!push)}
@@ -193,7 +200,7 @@ function Page2() {
               {/* <img src={Wide} className="rlistimg"></img> */}
               <h4 className="rtext">Pullup/Chinup</h4>
               {/* <h2 className="times">x10</h2> */}
-              <img
+              <img alt='imt' 
                 src={youtube}
                 className="youtube"
                 onClick={() => setWide(!wide)}
@@ -207,7 +214,7 @@ function Page2() {
 
               <h4 className="rtext">Seated Cable Row</h4>
               {/* <h2 className="times">x10</h2> */}
-              <img
+              <img alt='imt' 
                 src={youtube}
                 className="youtube"
                 onClick={() => setIncline(!incline)}
@@ -220,7 +227,7 @@ function Page2() {
               {/* <img src={Incline} className="rlistimg"></img> */}
               <h4 className="rtext">Lat PullDown</h4>
               {/* <h2 className="times">x10</h2> */}
-              <img
+              <img alt='imt' 
                 src={youtube}
                 className="youtube"
                 onClick={() => setDecline(!decline)}
@@ -233,7 +240,7 @@ function Page2() {
               {/* <img src={Incline} className="rlistimg"></img> */}
               <h4 className="rtext">Deadlift</h4>
               {/* <h2 className="times">x10</h2> */}
-              <img
+              <img alt='imt' 
                 src={youtube}
                 className="youtube"
                 onClick={() => setDiamond(!diamond)}

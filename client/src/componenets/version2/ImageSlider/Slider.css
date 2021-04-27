@@ -24,12 +24,14 @@
     justify-content:flex-end;
 
 }
-.slider_nav h1{
-    color: white;
+.slider_nav img{
+    border-radius:2px;
+    margin-top: 10px;
+    width: 110px;
+    height:60px;
+    top: 0;
+    left: 80px;
     position: absolute;
-    font-weight: bold;
-    font-size:70px;
-    top: 30px;left: 40px;
 }
 
 .slider_nav span{
@@ -45,7 +47,7 @@
     z-index:1;
 }
 .slider_text{
-    font-size: 100px;
+    font-size: 80px;
     color: #F5f5f5;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
@@ -53,15 +55,21 @@
 .slider_desc{
     font-size: 40px;
     color: #e0e0e0;;
-    margin-top: -20px;
+    margin-top: 0px;
     margin-bottom:10px ;
+    font-family: 'Dancing Script', cursive;
+    line-height:0.07;
+    letter-spacing:0.15em;
+    border-color: #121212;
+    text-shadow: 0 0 5px #121212, 0 0 10px #121212;
+
 }
 .slider_btn{
     background: #878688;
     width: 200px;
     height: 50px;
     font-weight: bold;
-    
+    margin-top: 40px;
     font-size:20px;
     border-radius: 10px;
     color:#121212;
@@ -340,7 +348,7 @@
 .card1-image
 {
     grid-area:image1;
-    background:url("../images/work4.jfif");
+    /* background:url("../images/work4.jfif"); */
     border-top-left-radius:15px;
     border-top-right-radius: 15px;
     background-size:cover;
@@ -387,7 +395,7 @@
 .card2-image
 {
     grid-area:image2;
-    background:url("../images/yoga 2.jfif");
+    /* background:url("../images/yoga 2.jfif"); */
     border-top-left-radius:15px;
     border-top-right-radius: 15px;
     background-size:cover;
@@ -431,7 +439,7 @@
 }
 .card3-image{
     grid-area:image3;
-    background:url("../images/cal3.jfif");
+    /* background:url("../images/cal3.jfif"); */
     border-top-left-radius:15px;
     border-top-right-radius: 15px;
     background-size:cover;
@@ -478,7 +486,7 @@
 
 }
 .heading-last{
-    margin-top:60px;
+    margin-top:80px;
     /* top:-100px; */
     font-size: 50px;
     color:silver;
@@ -575,7 +583,8 @@
     z-index:1;
     font-size: 40px;
     margin-left: 3%;
-    margin-top:0.02%;
+    margin-top: -20px;
+    margin-bottom: 10px;
     color:black;
     justify-content: center;
     display:flex;
@@ -606,7 +615,7 @@
 .form-control{
     
     width:400px;
-    height:100px;
+    height:50px;
     background: #bdbdbd;;
     color: #121212;
 }

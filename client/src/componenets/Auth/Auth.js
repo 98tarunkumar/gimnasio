@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "../Navbar/Navbar";
 import Input from "./Input";
 import { GoogleLogin } from "react-google-login";
 import { useHistory } from "react-router-dom";
@@ -11,7 +10,6 @@ import {
   Grid,
   Typography,
   Container,
-  TextField,
 } from "@material-ui/core";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import Icon from "./Icon";

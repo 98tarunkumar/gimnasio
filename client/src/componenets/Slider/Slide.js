@@ -1,7 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import React from 'react'
-import { css, jsx } from '@emotion/react'
+import { jsx } from '@emotion/react'
 import Square from '../Square'
 import Rectangle from '../Rectangle'
 const Slide = ({ content }) => (

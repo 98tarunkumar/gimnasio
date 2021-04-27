@@ -47,9 +47,9 @@ function BLog() {
           </span>
         </div>
         <div className="footer_right">
-          <input type="text" placeholder="Email" >
+          <input type="email" placeholder="Email" style={{width:'300px'}}  >
           </input>
-          <h2>Subscribe </h2>
+          <h2 onClick={() =>(alert('Thanks for Subscribing.!!'))}>Subscribe </h2>
         </div>
       </div>
     </ div>

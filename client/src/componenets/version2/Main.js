@@ -1,9 +1,5 @@
 import React, { Component } from 'react'
 import Backdrop from './Backdrop/Backdrop'
-import Navbar from './Navbar/Navbar'
-import Sidedrawer from './Sidedrawer/Sidedrawer'
-
-import Sliderone from './ImageSlider/Sliderone'
 import Slider from './ImageSlider/Slider'
 
 
@@ -22,7 +18,6 @@ class Main extends Component {
         this.setState({sidedrawerOpen:false});
     }
     render() {
-        let sidedrawer;
         let backdrop;
         if(this.state.sidedrawerOpen){
             backdrop=<Backdrop click={this.backDropClickHandler}/>

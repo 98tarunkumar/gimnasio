@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./SecondPage.css";
 import fit from "./fitness.png";
-import lotus from "./lotus.png";
 export class SecondPage extends Component {
   render() {
     return (

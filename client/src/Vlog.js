@@ -1,13 +1,11 @@
 import React from 'react'
 import { useEffect,useState } from "react";
 
-import { Switch, Route } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
 import { useLocation } from 'react-router-dom';
 import './vlog.css'
 
 
-import {Container,AppBar,Typography,Grow,Grid} from '@material-ui/core'
+import {Container,Grow,Grid} from '@material-ui/core'
 import Form from "./componenets/Form/Form";
 import Posts from "./componenets/Posts/Posts";
 import useStyles from './styles'

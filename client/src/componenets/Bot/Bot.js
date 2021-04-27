@@ -4,7 +4,7 @@ import config from './config.js'
 import ActionProvider from './ActionProvider.js'
 import MessageParser from './MessageParser.js'
 import Chatbot from 'react-chatbot-kit'
-import BOT from './speak.png'
+import BOT from './chat.png'
 // function Bot() {
 class Bot extends Component{
 
@@ -36,8 +36,8 @@ class Bot extends Component{
                 messageParser={MessageParser}
                 /> 
             }
-            <div className={!this.state.active? "chatbot":"clear"}  onClick={this.handleClick}>
-                <img src={BOT}></img>
+            <div className="chatbot"  onClick={this.handleClick}>
+                <img src={BOT} alt="bot"></img>
                 {/* <Chatbot
                 config={config}
                 actionProvider={ActionProvider}

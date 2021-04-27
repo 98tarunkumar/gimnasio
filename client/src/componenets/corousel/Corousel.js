@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Corousel.css";
-import { CorouselData } from "./CorouselData";
 
 // import AwesomeSlider from "react-awesome-slider";
 // import "react-awesome-slider/dist/styles.css";

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+
 import Bot from "./componenets/Bot/Bot";
 import Page1 from "./componenets/Pages/Page1/Page1";
 import Page2 from "./componenets/Pages/Page1/Page2";
@@ -6,21 +6,13 @@ import Page3 from "./componenets/Pages/Page1/Page3";
 import Page4 from "./componenets/Pages/Page1/Page4";
 import Page5 from "./componenets/Pages/Page1/Page5";
 import Auth from "./componenets/Auth/Auth";
-import logo from "./logo.svg";
 import { Switch, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import "./App.css";
 
-import { Container, AppBar, Typography, Grow, Grid } from "@material-ui/core";
-import Form from "./componenets/Form/Form";
-import Posts from "./componenets/Posts/Posts";
-import useStyles from "./styles";
-import { useDispatch } from "react-redux";
-import { getPosts } from "./actions/posts";
 import Vlog from "./Vlog";
 import BLog from "./componenets/Blog/BLog";
-import Todo from "./componenets/Todotaks/Todo";
 import Gettstarted from "./componenets/LoginSignup/Gettstarted";
 import Workout from "./componenets/Herosections/workout/Workout";
 // import Yoga from "./componenets/Herosections/Yoga/Yoga";
@@ -40,10 +32,25 @@ import Advanceyoga1 from "./componenets/version2/Yoga/Beginer/Advancedyoga/Advan
 import Advanceyoga2 from "./componenets/version2/Yoga/Beginer/Advancedyoga/Advancedyoga2";
 import Advanceyoga3 from "./componenets/version2/Yoga/Beginer/Advancedyoga/Advancedyoga3";
 import Advanceyoga4 from "./componenets/version2/Yoga/Beginer/Advancedyoga/Advancedyoga4";
-import Stopwatch from "./componenets/Stopwatch/Stopwatch";
 import Main from "./componenets/version2/Main";
 import Service from "./componenets/version2/ImageSlider/Service";
 import Contactus from "./componenets/version2/ImageSlider/Contactus";
+import Cpage1 from "./componenets/version2/Calisthenics/Begin/Cpage1";
+import Cpage2 from "./componenets/version2/Calisthenics/Begin/Cpage2";
+import Cpage3 from "./componenets/version2/Calisthenics/Begin/Cpage3";
+import Cpage4 from "./componenets/version2/Calisthenics/Begin/Cpage4";
+import Cpage5 from "./componenets/version2/Calisthenics/Begin/Cpage5";
+import Cal from "./componenets/Herosections/Calistenics/Cal";
+import Intercal1 from "./componenets/version2/Calisthenics/Intermediate/Intercal1";
+import Intercal2 from "./componenets/version2/Calisthenics/Intermediate/Intercal2";
+import Intercal3 from "./componenets/version2/Calisthenics/Intermediate/Intercal3";
+import Intercal4 from "./componenets/version2/Calisthenics/Intermediate/Intercal4";
+import Intercal5 from "./componenets/version2/Calisthenics/Intermediate/Intercal5";
+import Advcal1 from "./componenets/version2/Calisthenics/Advanced/Advcal1";
+import Advcal2 from "./componenets/version2/Calisthenics/Advanced/Advcal2";
+import Advcal3 from "./componenets/version2/Calisthenics/Advanced/Advcal3";
+import Advcal4 from "./componenets/version2/Calisthenics/Advanced/Advcal4";
+import Advcal5 from "./componenets/version2/Calisthenics/Advanced/Advcal5";
 function App() {
   const location = useLocation();
 
@@ -139,6 +146,54 @@ function App() {
           <Route exact path="/advanceyoga2" component={Advanceyoga2} />
           <Route exact path="/advanceyoga3" component={Advanceyoga3} />
           <Route exact path="/advanceyoga4" component={Advanceyoga4} />
+          <Route path="/calestenics">
+            <Cal/>
+          </Route>
+          <Route path="/calbegin1">
+            <Cpage1/>
+          </Route>
+          <Route path="/calbegin2">
+            <Cpage2/>
+          </Route>
+          <Route path="/calbegin3">
+            <Cpage3/>
+          </Route>
+          <Route path="/calbegin4">
+            <Cpage4/>
+          </Route>
+          <Route path="/calbegin5">
+            <Cpage5/>
+          </Route>
+          <Route path="/calinter1">
+          <Intercal1/>
+          </Route>
+          <Route path="/calinter2">
+          <Intercal2/>
+          </Route>
+          <Route path="/calinter3">
+          <Intercal3/>
+          </Route>
+          <Route path="/calinter4">
+          <Intercal4/>
+          </Route>
+          <Route path="/calinter5">
+          <Intercal5/>
+          </Route>
+          <Route path='/advancecal1'>
+            <Advcal1/>
+          </Route>
+          <Route path='/advancecal2'>
+            <Advcal2/>
+          </Route>
+          <Route path='/advancecal3'>
+            <Advcal3/>
+          </Route>
+          <Route path='/advancecal4'>
+            <Advcal4/>
+          </Route>
+          <Route path='/advancecal5'>
+            <Advcal5/>
+          </Route>
         </Switch>
       </AnimatePresence>
     </div>

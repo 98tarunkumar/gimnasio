@@ -1,3 +1,4 @@
+
 class ActionProvider {
     constructor(createChatBotMessage, setStateFunc, createClientMessage) {
       this.createChatBotMessage = createChatBotMessage;
@@ -12,6 +13,7 @@ class ActionProvider {
       const message=this.createChatBotMessage("See ya!!");
       this.addMessageToState(message)
     }
+    
 
 
     handleStrengthTraining =()=>{
@@ -24,6 +26,24 @@ class ActionProvider {
       this.addMessageToState(message)
     }
 
+    handleYogaTraining =()=>{
+      const message =this.createChatBotMessage(
+        "Work on you soul",
+        {
+          widget:"yogaOptions"
+        }
+      )
+      this.addMessageToState(message)
+    }
+    handleCalTraining =()=>{
+      const message =this.createChatBotMessage(
+        "Calisthenics...",
+        {
+          widget:"calOptions"
+        }
+      )
+      this.addMessageToState(message)
+    }
 
     addMessageToState=(message)=>{
       this.setState(prevState=>({ //save the previous state, before updating the new message

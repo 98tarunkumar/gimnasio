@@ -22,7 +22,7 @@ function Workout() {
         </Link>
       </div>
       <div className="workout_right">
-        <img
+        <img  alt="ime" 
           src={back}
           style={{ objectFit: "cover", height: "700px", marginTop: "-40px" }}
         ></img>

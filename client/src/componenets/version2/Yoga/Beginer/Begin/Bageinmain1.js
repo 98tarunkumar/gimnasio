@@ -1,11 +1,7 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import tadasana from "../tadasana.jpg";
 import uttanasana from "../uttanasana.jpg";
-import Chaturanga from "../Chaturanga.jpg";
-import Adho from "../Adho.jpg";
-import Balasana from "../Balasana.jpg";
 import { motion } from "framer-motion";
 import "./Beginmain.css";
 import One from '../Images/one.png'
@@ -13,6 +9,8 @@ import Two from '../Images/two.png'
 import Three from '../Images/three.png'
 import Four from '../Images/four.png'
 import Five from '../Images/five.png'
+
+import cancel from "../Images/cancel.png";
 import Home from '../Images/home.png'
 import Bot from "../../../../Bot/Bot";
 import Stopwatch from "../../../../Stopwatch/Stopwatch";
@@ -49,7 +47,7 @@ function Bageinmain1() {
             whileHover={{ scale: 0.9 }}
           >
             <Link to="./yoga">
-              <img src={Home} alt="image" width="80px" height="80px"></img>
+              <img src={Home} alt="ime" width="80px" height="80px"></img>
             </Link>
           </motion.div>
           <motion.div
@@ -58,7 +56,7 @@ function Bageinmain1() {
             whileHover={{ scale: 0.9 }}
           >
             <Link to="/yogabeginer">
-              <img src={One} alt="image" width="80px" height="80px" ></img></Link>
+              <img src={One} alt="ime" width="80px" height="80px" ></img></Link>
           </motion.div>
           <motion.div
             className="chesticon"
@@ -66,7 +64,7 @@ function Bageinmain1() {
             whileHover={{ scale: 0.9 }}
           >
             <Link to="/yogabeginer1">
-              <img src={Two} alt="image" width="80px" height="80px" ></img></Link>
+              <img src={Two} alt="ime" width="80px" height="80px" ></img></Link>
           </motion.div>
           <motion.div
             className="chesticon"
@@ -74,7 +72,7 @@ function Bageinmain1() {
             whileHover={{ scale: 0.9 }}
           >
             <Link to="./yogabeginer2">
-              <img src={Three} alt="image" width="80px" height="80px" ></img></Link>
+              <img src={Three} alt="ime" width="80px" height="80px" ></img></Link>
           </motion.div>
           <motion.div
             className="chesticon"
@@ -82,7 +80,7 @@ function Bageinmain1() {
             whileHover={{ scale: 0.9 }}
           >
             <Link to="./yogabeginer3">
-              <img src={Four} alt="image" width="80px" height="80px" ></img></Link>
+              <img src={Four} alt="ime" width="80px" height="80px" ></img></Link>
           </motion.div>
           <motion.div
             className="chesticon"
@@ -90,7 +88,16 @@ function Bageinmain1() {
             whileHover={{ scale: 0.9 }}
           >
             <Link to="./yogabeginer4">
-              <img src={Five} alt="image" width="80px" height="80px" ></img></Link>
+              <img src={Five} alt="ime" width="80px" height="80px" ></img></Link>
+          </motion.div>
+          <motion.div
+            className="chesticon"
+            whileTap={{ scale: 0.8 }}
+            whileHover={{ scale: 0.9 }}
+          >
+            <Link to="/">
+              <img src={cancel} alt="ime" width="80px" height="80px"></img>
+            </Link>
           </motion.div>
         </div>
         <div className="workoutmain">
@@ -121,7 +128,7 @@ function Bageinmain1() {
               </h3>
             </div>
             <div className="main_left">
-              <img src={uttanasana} width="100%" height="100%" style={{borderRadius:"20px"}} ></img>
+              <img src={uttanasana} width="100%" height="100%"  alt="ime"  style={{borderRadius:"20px"}} ></img>
             </div>
           </div>
 

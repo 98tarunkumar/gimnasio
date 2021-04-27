@@ -23,7 +23,7 @@ const HOme = () => {
       <div className="box">
         <div className="nav">
           <div className="logo">
-            <img src={logo} className="loo"></img>
+            <img src={logo} className="loo"  alt="ime" ></img>
           </div>
           <div className="innerbox">
             <span className="tag">Home</span>
@@ -39,7 +39,7 @@ const HOme = () => {
             <div className="txt">WorkFlow</div>
             <div className="text">cm'on....Hit me</div>
             <button className="fbtn">Explore Now</button>
-            <img src={banner} className="banner"></img>
+            <img src={banner} className="banner"  alt="ime" ></img>
           </div>
         </div>
         <div className="secondbox">
@@ -51,21 +51,21 @@ const HOme = () => {
               <img
                 src="https://upl.stack.com/wp-content/uploads/2020/03/11113000/Morning-Workout.jpg "
                 height="20%"
-                width="20%"
+                width="20%" alt="ime" 
               ></img>
             </label>
             <label for="s2" id="slide2">
               <img
                 src="https://image.shutterstock.com/image-photo/calisthenics-instructor-trains-alone-home-260nw-1767719180.jpg "
                 height="20%"
-                width="20%"
+                width="20%" alt="ime" 
               ></img>
             </label>
             <label for="s3" id="slide3">
               <img
                 src="https://static.toiimg.com/photo/75116557.cms "
                 height="20%"
-                width="20%"
+                width="20%" alt="ime" 
               ></img>
             </label>
           </section>

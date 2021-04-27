@@ -54,7 +54,7 @@ function Stopwatch() {
 
   return (
     <>
-    <img src={timer} className="timer_img" onClick={()=>{setStop(!stp)}} ></img>
+    <img src={timer} className="timer_img" onClick={()=>{setStop(!stp)}} alt="ime" ></img>
     {stp?
       <div className="main-sectiongym">
       <div className="clock-holdergym">
